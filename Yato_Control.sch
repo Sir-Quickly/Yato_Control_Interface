@@ -1,14 +1,14 @@
 EESchema Schematic File Version 4
-LIBS:first-cache
+LIBS:Yato_Control-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "YATO externe Steuer-Schnittstelle"
+Date "2020-06-05"
+Rev "1.0"
+Comp "#MeBroo (by Roland)"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -491,7 +491,7 @@ U 1 1 5C806846
 P 4950 3350
 F 0 "C1" H 4833 3441 50  0000 R CNN
 F 1 "100uF" H 4833 3350 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4988 3200 50  0001 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4988 3200 50  0001 L CNN
 F 3 "~" H 4950 3350 50  0001 C CNN
 F 4 "6V3" H 4833 3259 50  0000 R CNN "Spannung"
 	1    4950 3350
@@ -503,7 +503,7 @@ U 1 1 5EB877A1
 P 8550 3950
 F 0 "C4" H 8432 4041 50  0000 R CNN
 F 1 "4u7" H 8432 3950 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 8588 3800 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8588 3800 50  0001 C CNN
 F 3 "~" H 8550 3950 50  0001 C CNN
 F 4 "6V3" H 8432 3859 50  0000 R CNN "Spannung"
 	1    8550 3950
@@ -554,4 +554,48 @@ Wire Wire Line
 Connection ~ 8550 4200
 Wire Wire Line
 	8550 4200 8550 4300
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5ED80DD4
+P 1150 7100
+F 0 "H1" H 1250 7146 50  0000 L CNN
+F 1 "MountingHole" H 1250 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4mm" H 1150 7100 50  0001 C CNN
+F 3 "~" H 1150 7100 50  0001 C CNN
+	1    1150 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5ED80E60
+P 1500 7100
+F 0 "H2" H 1600 7146 50  0000 L CNN
+F 1 "MountingHole" H 1600 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4mm" H 1500 7100 50  0001 C CNN
+F 3 "~" H 1500 7100 50  0001 C CNN
+	1    1500 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5ED80EE6
+P 1850 7100
+F 0 "H3" H 1950 7146 50  0000 L CNN
+F 1 "MountingHole" H 1950 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4mm" H 1850 7100 50  0001 C CNN
+F 3 "~" H 1850 7100 50  0001 C CNN
+	1    1850 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5ED80F7E
+P 2250 7100
+F 0 "H4" H 2350 7146 50  0000 L CNN
+F 1 "MountingHole" H 2350 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4mm" H 2250 7100 50  0001 C CNN
+F 3 "~" H 2250 7100 50  0001 C CNN
+	1    2250 7100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
