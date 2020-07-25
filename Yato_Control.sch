@@ -229,7 +229,7 @@ On_Ext
 Text Label 3200 3000 0    50   ~ 0
 Pwr_Ctrl_Ext
 Wire Wire Line
-	2600 3900 5850 3900
+	2600 3900 3100 3900
 Wire Wire Line
 	5850 3800 6050 3800
 Wire Wire Line
@@ -264,9 +264,6 @@ Wire Wire Line
 	2600 4100 2700 4100
 Wire Wire Line
 	2700 4100 2700 3800
-Connection ~ 2700 4300
-Wire Wire Line
-	2700 4300 2700 4400
 $Comp
 L Device:R R1
 U 1 1 5C7EA521
@@ -334,12 +331,12 @@ $EndComp
 $Comp
 L Device:R R4
 U 1 1 5C8127E9
-P 5700 3350
-F 0 "R4" H 5770 3396 50  0000 L CNN
-F 1 "1k0" H 5770 3305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 3350 50  0001 C CNN
-F 3 "~" H 5700 3350 50  0001 C CNN
-	1    5700 3350
+P 4500 3400
+F 0 "R4" H 4300 3450 50  0000 L CNN
+F 1 "1k0" H 4300 3350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4430 3400 50  0001 C CNN
+F 3 "~" H 4500 3400 50  0001 C CNN
+	1    4500 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -357,8 +354,6 @@ Wire Wire Line
 	4600 2800 4450 2800
 Wire Wire Line
 	5850 3900 5850 3800
-Wire Wire Line
-	5700 3500 5700 3600
 Connection ~ 5450 1650
 Wire Wire Line
 	4450 1650 5450 1650
@@ -466,10 +461,6 @@ F 3 "~" H 4700 3100 50  0001 C CNN
 	1    4700 3100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5700 3100 6800 3100
-Wire Wire Line
-	5700 3100 5700 3200
 $Comp
 L Device:C C3
 U 1 1 5EB71BCC
@@ -516,19 +507,13 @@ Wire Wire Line
 	4950 3600 4950 3650
 Wire Wire Line
 	5350 3500 5350 3600
-Connection ~ 5350 3600
-Wire Wire Line
-	5350 3600 5700 3600
 Wire Wire Line
 	4950 3200 4950 3100
 Wire Wire Line
 	4950 3100 5350 3100
-Connection ~ 5700 3100
 Wire Wire Line
 	5350 3100 5350 3200
 Connection ~ 5350 3100
-Wire Wire Line
-	5350 3100 5700 3100
 Wire Wire Line
 	4850 3100 4950 3100
 Connection ~ 4950 3100
@@ -598,4 +583,32 @@ F 3 "~" H 2250 7100 50  0001 C CNN
 	1    2250 7100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5350 3100 6800 3100
+Wire Wire Line
+	4950 3600 4500 3600
+Wire Wire Line
+	4500 3600 4500 3550
+Wire Wire Line
+	4500 3250 4500 3100
+Connection ~ 4500 3100
+$Comp
+L Device:R R6
+U 1 1 5F1A1816
+P 2950 4200
+F 0 "R6" V 3100 4200 50  0000 L CNN
+F 1 "4k7" V 3020 4155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 4200 50  0001 C CNN
+F 3 "~" H 2950 4200 50  0001 C CNN
+	1    2950 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 4200 3100 3900
+Connection ~ 3100 3900
+Wire Wire Line
+	3100 3900 5850 3900
+Wire Wire Line
+	2800 4200 2700 4200
+Connection ~ 2700 4200
 $EndSCHEMATC
